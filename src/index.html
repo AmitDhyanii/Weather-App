@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-slate-900 text-slate-100">
+    <div class="card relative">
+
+        <div class="search   flex flex-col items-center justify-center  py-12">
+            <form action="" class="px-6 flex  ">
+                <div class="flex w-full    items-center">
+                    <input type="text"  class="text-gray-700 pl-8 focus:ring-4 focus:ring-teal-600 h-16  px-4 outline-none rounded-full w-[60vw] mx-6 text-lg" placeholder="City..." spellcheck="false">
+                    <button type="submit" class="bg-teal-500 p-5 rounded-full h-16 w-16 flex items-center justify-center hover:bg-teal-600"><img src="search.png" class=""></button>
+               
+                </div>
+                    
+                
+              
+            </form>
+            <!-- <p>Invalid city name</p> -->
+            <div class="error mr-8 mt-5 hidden text-red-500 text-xl font-semibold">
+                    Invalid city name
+            </div>  
+        </div>
+
+
+        <div class="weather hidden ">
+            <div class="flex flex-col items-center">
+                <!-- <div class="flex"> -->
+                    <img src="clear.png" class="weather-icon h-48">
+                    <h1 class="temp text-6xl font-semibold mb-2">22°c</h1>
+                <!-- </div> -->
+                 
+                <h2 class="city text-xl">New York</h2>
+            </div>
+           
+
+            <div class="details flex bg-gray-700 m-8 p-4 rounded-lg items-center justify-around">
+
+                <div class="col flex-col items-center justify-center flex item ">
+                    <img src="humidity.png">
+                    <!-- <div> -->
+                        <p class="humidity">50%</p>
+                        <p class="opacity-80">Humidity</p>
+                    <!-- </div> -->
+                </div>
+    
+                <div class="col flex-col items-center justify-center flex item ">
+                    <img src="wind.png">
+                    <!-- <div> -->
+                        <p class="wind">10 km/h</p>
+                        <p class="opacity-80">Wind Speed</p>
+                    <!-- </div> -->
+                </div>
+                
+            </div>
+
+        </div>
+        <!-- <div class="fixed text-red-500 bottom-2 left-60 ">
+            <p>Made with ❤️ by Dhyani Bhai</p>
+        </div> -->
+    </div>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>
